@@ -1,51 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Events!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-  </head>
-  <body>
-
-      3. Guess what letter I'm thinking of
-
-      4. Wins: (# of times the user has guessed the letter correctly)
-      
-      5. Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
-      
-      6. Guesses Left: (# of guesses left. This will update)
-      
-      7. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-      
-      8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-      
-      9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="jumbotron">
-            <h2>You just typed <span id="user-text">...Nothing.</span></h2>
-          </div>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8 content">
+            <h1>Psychic Game</h1>
+            <image src="./assets/images/spiral-2730206_1280.jpg" alt="spiral colors photo image" style="width:400px;height:400px;" class="center">
+            <div class="row-item">
+                <span>Guess what letter I'm thinking of</span>
+            </div>
+            <div class="row-item">
+                <span class="row-text">Wins: </span>
+                <span class="row-value" id="win_item"></span>
+            </div>
+            <div class="row-item">
+                <span class="row-text">Losses: </span>
+                <span class="row-value" id="lose_item"></span>
+            </div>
+            <div class="row-item">
+                <span class="row-text">Guesses Left: </span>
+                <span class="row-value" id="left_item"></span>
+            </div>
+            <div class="row-item">
+                <span class="row-text">Your Guesses So Far: </span>
+                <span class="row-value" id="entered_item"></span>
+            </div>
         </div>
-      </div>
     </div>
-
-    <!-- We have to put this at the end of our document to ensure the user-text
-         span exists when we try to access it. -->
-    <script type="text/javascript">
-      // Let's start by grabbing a reference to the <span> below.
-      var userText = document.getElementById("user-text");
-
-      // Next, we give JavaScript a function to execute when onkeyup event fires.
-      userText.textContent = "I'm going to change.";
-      
-      document.onkeyup = function(event) {
-        userText.textContent = event.key;
-      };
-    </script>
-  </body>
+</div>
+<script src="./assets/javascript/game.js"></script>
+</body>
 </html>
 

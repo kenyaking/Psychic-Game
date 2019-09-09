@@ -6,4 +6,4 @@ Solution: I created an application that randomly picks a letter and requires pla
 
 Technology: Bootstrap, Javascript
 
-Link to app: 
+Link to app: https://kenyaking.github.io/Psychic-Game/

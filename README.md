@@ -1,6 +1,4 @@
 # Psychic-Game
-<<<<<<< HEAD
-=======
 
 Challenge/Problem: Develop a word guessing game that dynamically updates HTML/CSS.
 
@@ -9,4 +7,3 @@ Solution: I created an application that randomly picks a letter and requires pla
 Technology: Bootstrap, Javascript
 
 Link to app: https://kenyaking.github.io/Psychic-Game/
->>>>>>> ada64830442d7101379a89f972c0b930af03f44e

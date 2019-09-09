@@ -1,6 +1,9 @@
 # Psychic-Game
 
+Challenge/Problem: Develop a word guessing game that dynamically updates HTML/CSS.
 
-In this game, the application randomly picks a letter. Players of the game will guess the letter the application selected. If the user guesses the right letter more times than guessing the wrong letter, the user wins the game. The player has 9 times to guess the correct letter before the game starts over.  
+Solution: I created an application that randomly picks a letter and requires players to guess the letter selected. If the user guesses the right letter more times than guessing the wrong letter, the user wins the game. The player has 9 times to guess the correct letter before the game starts over.  
 
-https://github.com/kenyaking/Psychic-Game
+Technology: Bootstrap, Javascript
+
+Link to app: 
